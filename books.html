@@ -1,0 +1,99 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - LibraryHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">📚 LIBRARY<span>HUB</span></div>
+
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="books.html" target="_blank">Books</a>
+        <a href="members.html" target="_blank">Members</a>
+        <a href="issue.html" target="_blank">Issue</a>
+        <a href="return.html" target="_blank">Return</a>
+        <a href="services.html" target="_blank">Services</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="login.html" target="_blank" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<div class="page">
+
+    <h1>📚 Available Books</h1>
+
+    <p class="subtitle">
+        Search and explore books available in our library.
+    </p>
+
+    <input
+        type="text"
+        id="search"
+        class="search-box"
+        placeholder="🔍 Search books..."
+        onkeyup="searchBooks()"
+    >
+
+    <div class="book-grid" id="bookList">
+
+        <div class="book-card">
+            <div class="book-icon">📘</div>
+            <h3>Computer Science</h3>
+            <p>Programming & Computer Fundamentals</p>
+            <span class="available">Available</span>
+        </div>
+
+        <div class="book-card">
+            <div class="book-icon">📗</div>
+            <h3>Data Structures</h3>
+            <p>Algorithms and Data Structures</p>
+            <span class="available">Available</span>
+        </div>
+
+        <div class="book-card">
+            <div class="book-icon">📕</div>
+            <h3>Database Management</h3>
+            <p>SQL and Database Systems</p>
+            <span class="available">Available</span>
+        </div>
+
+        <div class="book-card">
+            <div class="book-icon">📙</div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS and JavaScript</p>
+            <span class="available">Available</span>
+        </div>
+
+        <div class="book-card">
+            <div class="book-icon">📓</div>
+            <h3>Artificial Intelligence</h3>
+            <p>AI and Machine Learning</p>
+            <span class="available">Available</span>
+        </div>
+
+        <div class="book-card">
+            <div class="book-icon">📔</div>
+            <h3>Operating Systems</h3>
+            <p>Operating System Concepts</p>
+            <span class="available">Available</span>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 LibraryHub</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

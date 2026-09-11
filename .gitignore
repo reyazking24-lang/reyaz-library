@@ -1,0 +1,8 @@
+# Large runtime files (GitHub blocks files > 100MB)
+oracleJdk-26/
+
+# Temporary and editor files
+tempCodeRunnerFile.java
+*.class
+.vscode/
+Thumbs.db

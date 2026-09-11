@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book - LibraryHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">📚 LIBRARY<span>HUB</span></div>
+
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="books.html" target="_blank">Books</a>
+        <a href="members.html" target="_blank">Members</a>
+        <a href="issue.html" target="_blank">Issue</a>
+        <a href="return.html" target="_blank">Return</a>
+        <a href="services.html" target="_blank">Services</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="login.html" target="_blank" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<div class="form-page">
+
+    <div class="form-box">
+
+        <h1>📥 Return Book</h1>
+
+        <form onsubmit="returnBook(event)">
+
+            <label>Member ID</label>
+            <input type="text" placeholder="Enter Member ID" required>
+
+            <label>Book Name</label>
+            <input type="text" placeholder="Enter Book Name" required>
+
+            <label>Return Date</label>
+            <input type="date" required>
+
+            <label>Fine</label>
+            <input type="number" placeholder="Enter fine amount">
+
+            <button type="submit">Return Book</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
