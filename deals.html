@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Special Deals & Flash Discounts | REYAZ ELECTRONIC STORE</title>
+  <meta name="description" content="Big Savings. Bigger Technology. Limited-time flash deals and discounts on flagship electronics at REYAZ ELECTRONIC STORE.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deep: '#0A1128',
+              surface: '#0F1E3D',
+              elevated: '#16274E',
+              blue: '#0066FF',
+              cyan: '#00D2FF',
+              orange: '#FF6B00'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-white pb-16 md:pb-0">
+
+  <!-- TOP BAR -->
+  <div class="bg-gradient-to-r from-[#0A1128] via-[#0F1E3D] to-[#0A1128] text-slate-300 text-xs py-2 px-4 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500 text-slate-900">FLASH SALE</span>
+        <span>Save up to $500 today on flagship smart devices!</span>
+      </div>
+      <div class="flex items-center gap-5 text-[11px]">
+        <a href="contact.html" class="hover:text-white flex items-center gap-1"><i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400"></i> +91 98765 43210</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-40 bg-[#0A1128]/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#0066FF] to-[#00D2FF] flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-black font-heading text-white group-hover:text-[#00D2FF]">REYAZ</span>
+              <span class="text-xs font-black px-1.5 py-0.5 rounded bg-blue-500/20 text-[#00D2FF] border border-blue-400/30">TECH</span>
+            </div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-slate-400 -mt-1">ELECTRONIC STORE</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="nav-link hover:text-[#00D2FF]">Home</a>
+          <a href="shop.html" class="nav-link hover:text-[#00D2FF]">Shop</a>
+          <a href="categories.html" class="nav-link hover:text-[#00D2FF]">Categories</a>
+          <a href="deals.html" class="nav-link text-amber-400 font-bold flex items-center gap-1"><i data-lucide="flame" class="w-4 h-4 fill-current"></i> Deals</a>
+          <a href="about.html" class="nav-link hover:text-[#00D2FF]">About Us</a>
+          <a href="contact.html" class="nav-link hover:text-[#00D2FF]">Contact</a>
+        </nav>
+
+        <div class="hidden md:flex flex-1 max-w-xs xl:max-w-sm relative">
+          <input type="text" id="header-search-input" placeholder="Search deals & products..."
+                 class="w-full bg-white/10 border border-white/15 focus:border-[#00D2FF] text-white text-xs rounded-xl pl-9 pr-4 py-2.5 focus:outline-none placeholder-slate-400">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-3 pointer-events-none"></i>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="wishlist.html" class="relative p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white" title="Wishlist">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+            <span class="wishlist-count-badge hidden absolute -top-1 -right-1 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-black flex items-center justify-center">0</span>
+          </a>
+          <a href="cart.html" class="relative p-2.5 rounded-xl bg-[#0066FF] hover:bg-blue-600 text-white shadow-lg flex items-center gap-2" title="Cart">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span class="hidden sm:inline text-xs font-bold font-heading">Cart</span>
+            <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 sm:relative sm:top-auto sm:right-auto px-1.5 py-0.5 rounded-full bg-amber-400 text-slate-900 text-[10px] font-black">0</span>
+          </a>
+          <a href="account.html" id="header-account-btn" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-white/5 text-slate-300 flex items-center gap-2 border border-white/10">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="hidden md:inline text-xs font-bold">Sign In</span>
+          </a>
+          <button class="lg:hidden p-2.5 rounded-xl bg-white/5 text-slate-300" onclick="window.app.openMobileNav()"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DEALS HERO & COUNTDOWN -->
+  <section class="bg-[#0A1128] text-white py-14 border-b border-white/10 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex items-center gap-2 text-xs text-slate-400 mb-4">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+        <span class="text-amber-400">Special Deals</span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+        <div>
+          <span class="text-xs font-bold text-amber-400 bg-amber-400/10 border border-amber-400/20 px-3.5 py-1.5 rounded-full">
+            Today's Best Deals
+          </span>
+          <h1 class="text-4xl sm:text-5xl font-black font-heading tracking-tight mt-3">
+            Big Savings. <span class="text-gradient-electric">Bigger Technology.</span>
+          </h1>
+          <p class="text-slate-300 text-sm mt-2 max-w-xl">
+            Limited-time price drops on flagship smartphones, creator laptops, 4K TVs, and ANC audio gear.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl">
+          <div>
+            <span class="text-xs text-slate-400 font-bold block">Flash Offer Closes In:</span>
+            <span class="text-[11px] text-amber-400 font-medium">Auto-refreshes daily</span>
+          </div>
+          <div class="flex items-center gap-2 font-heading">
+            <div class="timer-box w-14 h-16 flex flex-col items-center justify-center p-1 text-center shadow-lg">
+              <span id="timer-hours" class="text-2xl font-black text-white leading-none">14</span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold mt-1">Hours</span>
+            </div>
+            <span class="text-xl font-bold text-[#00D2FF]">:</span>
+            <div class="timer-box w-14 h-16 flex flex-col items-center justify-center p-1 text-center shadow-lg">
+              <span id="timer-mins" class="text-2xl font-black text-white leading-none">35</span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold mt-1">Mins</span>
+            </div>
+            <span class="text-xl font-bold text-[#00D2FF]">:</span>
+            <div class="timer-box w-14 h-16 flex flex-col items-center justify-center p-1 text-center shadow-lg">
+              <span id="timer-secs" class="text-2xl font-black text-[#00D2FF] leading-none">42</span>
+              <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold mt-1">Secs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO COUPONS STRIP -->
+  <section class="bg-gradient-to-r from-blue-900 to-[#0F1E3D] text-white py-6 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center font-bold">
+            <i data-lucide="tag" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Exclusive Promo Coupons</h4>
+            <p class="text-xs text-slate-300">Apply during checkout to unlock instant discounts</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono font-bold">
+          <div class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/20 flex items-center gap-2">
+            <span class="text-[#00D2FF]">REYAZ10</span>
+            <span class="text-slate-300 font-sans font-normal">(10% OFF)</span>
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/20 flex items-center gap-2">
+            <span class="text-amber-400">TECH20</span>
+            <span class="text-slate-300 font-sans font-normal">(20% Mega)</span>
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/20 flex items-center gap-2">
+            <span class="text-emerald-400">WELCOME50</span>
+            <span class="text-slate-300 font-sans font-normal">($50 Flat)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS GRID CONTAINER -->
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="deals-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Injected via app.js -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0A1128] text-slate-400 border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10 text-xs">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-xl bg-[#0066FF] flex items-center justify-center text-white"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+            <span class="text-base font-black font-heading text-white">REYAZ ELECTRONIC STORE</span>
+          </div>
+          <p class="text-slate-400">“Your trusted destination for electronics and technology.”</p>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-white mb-3">Shop</h4>
+          <ul class="space-y-2">
+            <li><a href="shop.html?category=smartphones" class="hover:text-[#00D2FF]">Smartphones</a></li>
+            <li><a href="shop.html?category=laptops" class="hover:text-[#00D2FF]">Laptops</a></li>
+            <li><a href="deals.html" class="text-amber-400">Flash Deals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-white mb-3">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="hover:text-[#00D2FF]">Contact Us</a></li>
+            <li><a href="about.html" class="hover:text-[#00D2FF]">Warranty Details</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-white mb-3">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:text-[#00D2FF]">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-[#00D2FF]">Store Location</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p class="text-slate-400">© 2026 REYAZ ELECTRONIC STORE. All Rights Reserved.</p>
+        <div class="flex items-center gap-2 text-[10px] font-bold">
+          <span class="px-2 py-1 rounded bg-white/5 text-white">VISA</span>
+          <span class="px-2 py-1 rounded bg-white/5 text-white">Mastercard</span>
+          <span class="px-2 py-1 rounded bg-white/5 text-[#00D2FF]">UPI</span>
+          <span class="px-2 py-1 rounded bg-white/5 text-emerald-400">COD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0A1128]/95 backdrop-blur-md border-t border-white/10 px-4 py-2 flex items-center justify-around text-slate-300">
+    <a href="index.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF]"><i data-lucide="home" class="w-5 h-5"></i><span>Home</span></a>
+    <a href="shop.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF]"><i data-lucide="shopping-bag" class="w-5 h-5"></i><span>Shop</span></a>
+    <a href="wishlist.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF] relative"><i data-lucide="heart" class="w-5 h-5"></i><span>Wishlist</span><span class="wishlist-count-badge hidden absolute -top-1 right-2 w-4 h-4 rounded-full bg-rose-500 text-white text-[9px] font-black flex items-center justify-center">0</span></a>
+    <a href="cart.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF] relative"><i data-lucide="shopping-cart" class="w-5 h-5"></i><span>Cart</span><span class="cart-count-badge hidden absolute -top-1 right-1 w-4 h-4 rounded-full bg-amber-400 text-slate-900 text-[9px] font-black flex items-center justify-center">0</span></a>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

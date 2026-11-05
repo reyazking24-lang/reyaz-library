@@ -1,64 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - LibraryHub</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | REYAZ ELECTRONIC STORE</title>
+  <meta name="description" content="Learn about REYAZ ELECTRONIC STORE and our founder. At REYAZ ELECTRONIC STORE, we believe technology should make life easier, smarter and better.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              deep: '#0A1128',
+              surface: '#0F1E3D',
+              elevated: '#16274E',
+              blue: '#0066FF',
+              cyan: '#00D2FF',
+              orange: '#FF6B00'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-600 selection:text-white pb-16 md:pb-0">
 
-<body>
+  <!-- TOP BAR -->
+  <div class="bg-gradient-to-r from-[#0A1128] via-[#0F1E3D] to-[#0A1128] text-slate-300 text-xs py-2 px-4 border-b border-white/5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#0066FF] text-white">ABOUT US</span>
+        <span>Trusted destination for electronics & consumer technology</span>
+      </div>
+      <div class="flex items-center gap-5 text-[11px]">
+        <a href="contact.html" class="hover:text-white flex items-center gap-1"><i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400"></i> +91 98765 43210</a>
+      </div>
+    </div>
+  </div>
 
-<header>
-    <div class="logo">📚 LIBRARY<span>HUB</span></div>
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-40 bg-[#0A1128]/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#0066FF] to-[#00D2FF] flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-black font-heading text-white group-hover:text-[#00D2FF]">REYAZ</span>
+              <span class="text-xs font-black px-1.5 py-0.5 rounded bg-blue-500/20 text-[#00D2FF] border border-blue-400/30">TECH</span>
+            </div>
+            <p class="text-[10px] font-bold tracking-widest uppercase text-slate-400 -mt-1">ELECTRONIC STORE</p>
+          </div>
+        </a>
 
-    <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="books.html" target="_blank">Books</a>
-        <a href="members.html" target="_blank">Members</a>
-        <a href="issue.html" target="_blank">Issue</a>
-        <a href="return.html" target="_blank">Return</a>
-        <a href="services.html" target="_blank">Services</a>
-        <a href="about.html" target="_blank">About</a>
-        <a href="contact.html" target="_blank">Contact</a>
-        <a href="login.html" target="_blank" class="login-btn">Login</a>
-    </nav>
-</header>
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="nav-link hover:text-[#00D2FF]">Home</a>
+          <a href="shop.html" class="nav-link hover:text-[#00D2FF]">Shop</a>
+          <a href="categories.html" class="nav-link hover:text-[#00D2FF]">Categories</a>
+          <a href="deals.html" class="nav-link text-amber-400 hover:text-amber-300 flex items-center gap-1"><i data-lucide="flame" class="w-4 h-4 fill-current"></i> Deals</a>
+          <a href="about.html" class="nav-link text-[#00D2FF] font-bold">About Us</a>
+          <a href="contact.html" class="nav-link hover:text-[#00D2FF]">Contact</a>
+        </nav>
 
-<div class="about">
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="wishlist.html" class="relative p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white" title="Wishlist">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+            <span class="wishlist-count-badge hidden absolute -top-1 -right-1 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-black flex items-center justify-center">0</span>
+          </a>
+          <a href="cart.html" class="relative p-2.5 rounded-xl bg-[#0066FF] hover:bg-blue-600 text-white shadow-lg flex items-center gap-2" title="Cart">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span class="hidden sm:inline text-xs font-bold font-heading">Cart</span>
+            <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 sm:relative sm:top-auto sm:right-auto px-1.5 py-0.5 rounded-full bg-amber-400 text-slate-900 text-[10px] font-black">0</span>
+          </a>
+          <a href="account.html" id="header-account-btn" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-white/5 text-slate-300 flex items-center gap-2 border border-white/10">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="hidden md:inline text-xs font-bold">Sign In</span>
+          </a>
+          <button class="lg:hidden p-2.5 rounded-xl bg-white/5 text-slate-300" onclick="window.app.openMobileNav()"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <div class="about-image">
-        <img src="images/library-photo.png" alt="Library Management">
+  <!-- ABOUT HERO -->
+  <section class="bg-[#0F1E3D] text-white py-16 border-b border-white/10 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 text-[#00D2FF] text-xs font-bold mb-4 border border-blue-400/20">
+          <i data-lucide="info" class="w-3.5 h-3.5"></i>
+          <span>Our Story & Mission</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-black font-heading tracking-tight mb-6">About REYAZ ELECTRONIC STORE</h1>
+        <p class="text-lg text-slate-200 leading-relaxed italic border-l-4 border-[#0066FF] pl-4">
+          “At REYAZ ELECTRONIC STORE, we believe technology should make life easier, smarter and better. We offer a wide range of quality electronics, gadgets and accessories at competitive prices, while focusing on genuine products and excellent customer service.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+    
+    <!-- OWNER & FOUNDER HIGHLIGHT SECTION -->
+    <section class="bg-gradient-to-br from-[#0A1128] via-[#0F1E3D] to-[#16274E] text-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-white/15 relative overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+        
+        <!-- Owner Photo Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-[#00D2FF] to-[#0066FF] rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
+            <div class="relative w-72 sm:w-80 h-96 sm:h-[420px] rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl bg-slate-900">
+              <img src="photos/owner-reyaz.jpg" alt="Reyaz - Founder & Owner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Floating Badge -->
+              <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl glass-panel-dark border border-white/20 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-base font-black font-heading text-white">Reyaz</h3>
+                    <p class="text-xs text-[#00D2FF] font-bold">Founder & Owner</p>
+                  </div>
+                  <span class="w-8 h-8 rounded-full bg-[#0066FF] flex items-center justify-center text-white text-xs font-black">
+                    <i data-lucide="check" class="w-4 h-4"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Owner Message & Vision -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 text-[#00D2FF] text-xs font-bold border border-blue-400/30">
+            <i data-lucide="user" class="w-3.5 h-3.5"></i>
+            <span>Leadership & Vision</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-black font-heading text-white tracking-tight">
+            Meet the Owner & Founder
+          </h2>
+
+          <p class="text-slate-200 text-base leading-relaxed italic border-l-4 border-[#00D2FF] pl-4">
+            “My vision for REYAZ ELECTRONIC STORE is built on unconditional authenticity and trust. Every single gadget we stock is sourced directly from certified authorized brand channels, so that each customer receives genuine products, uncompromised performance, and lasting service.”
+          </p>
+
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Welcome to <strong>REYAZ ELECTRONIC STORE</strong>. As the founder, I personally ensure that our catalog features only the latest technological advancements—from flagship 5G smartphones to cutting-edge M3 and RTX computing, OLED home theaters, and smart living appliances. We take pride in transparent pricing, immediate customer care, and quick doorstep fulfillment.
+          </p>
+
+          <div class="pt-4 border-t border-white/10 flex flex-wrap items-center gap-6 text-xs">
+            <div>
+              <p class="text-slate-400">Position:</p>
+              <p class="text-sm font-bold text-white">Founder & Managing Director</p>
+            </div>
+            <div>
+              <p class="text-slate-400">Store Direct:</p>
+              <p class="text-sm font-bold text-[#00D2FF]">+91 98765 43210</p>
+            </div>
+            <div>
+              <p class="text-slate-400">Headquarters:</p>
+              <p class="text-sm font-bold text-white">Bangalore, Karnataka</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0066FF] hover:bg-blue-600 text-white font-bold text-xs shadow-lg transition-all">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>Connect with Our Store Team</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORE EXPERIENCE SECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+        <img src="photos/hero-banner.jpg" alt="REYAZ Electronic Experience Center" class="w-full h-96 object-cover">
+      </div>
+      <div class="lg:col-span-6 space-y-5">
+        <h2 class="text-3xl font-black font-heading text-slate-900 tracking-tight">Pioneering Tech Retail For Modern Lifestyles</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Founded with a commitment to bring top-tier consumer technology to local families, students, creative professionals, and tech enthusiasts, <strong>REYAZ ELECTRONIC STORE</strong> has grown into a trusted retail destination.
+        </p>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Whether you are seeking the latest flagship smartphone, a high-performance workstation laptop, an immersive 4K OLED home theater screen, or essential charging accessories, every item in our store is verified authentic and covered by original manufacturer warranties.
+        </p>
+        
+        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200 text-center">
+          <div class="p-3 bg-blue-50 rounded-2xl">
+            <span class="text-2xl font-black text-[#0066FF] font-heading">50,000+</span>
+            <p class="text-xs text-slate-600 mt-0.5">Happy Buyers</p>
+          </div>
+          <div class="p-3 bg-emerald-50 rounded-2xl">
+            <span class="text-2xl font-black text-emerald-600 font-heading">100%</span>
+            <p class="text-xs text-slate-600 mt-0.5">Genuine Seals</p>
+          </div>
+          <div class="p-3 bg-amber-50 rounded-2xl">
+            <span class="text-2xl font-black text-amber-600 font-heading">15+ Yrs</span>
+            <p class="text-xs text-slate-600 mt-0.5">Customer Trust</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="about-content">
-
-        <p class="small-title">ABOUT LIBRARYHUB</p>
-
-        <h1>Modern Library<br>Management System</h1>
-
-        <p>
-            LibraryHub is a professional digital library management
-            system designed to simplify the management of books,
-            members, issues and returns.
-        </p>
-
-        <p>
-            The system provides an easy-to-use interface for students,
-            librarians and administrators.
-        </p>
-
-        <ul>
-            <li>✔ Easy book management</li>
-            <li>✔ Simple member management</li>
-            <li>✔ Fast book issue and return</li>
-            <li>✔ Professional user interface</li>
-            <li>✔ Responsive design</li>
-        </ul>
-
+    <!-- 4 BENEFITS SECTION -->
+    <div class="pt-4">
+      <h2 class="text-2xl font-black font-heading text-slate-900 text-center mb-10">Our Core Commitments</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-[#0066FF] flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Genuine Products</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">100% authentic electronics from trusted brands.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
+            <i data-lucide="tag" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Best Prices</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Competitive prices and exciting deals.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Fast Delivery</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Quick and reliable delivery.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+            <i data-lucide="headphones" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Customer Support</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Friendly support whenever you need it.</p>
+        </div>
+      </div>
     </div>
 
-</div>
+  </main>
 
+  <!-- FOOTER -->
+  <footer class="bg-[#0A1128] text-slate-400 border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-center">
+      <p>© 2026 REYAZ ELECTRONIC STORE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0A1128]/95 backdrop-blur-md border-t border-white/10 px-4 py-2 flex items-center justify-around text-slate-300">
+    <a href="index.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF]"><i data-lucide="home" class="w-5 h-5"></i><span>Home</span></a>
+    <a href="shop.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF]"><i data-lucide="shopping-bag" class="w-5 h-5"></i><span>Shop</span></a>
+    <a href="wishlist.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF] relative"><i data-lucide="heart" class="w-5 h-5"></i><span>Wishlist</span><span class="wishlist-count-badge hidden absolute -top-1 right-2 w-4 h-4 rounded-full bg-rose-500 text-white text-[9px] font-black flex items-center justify-center">0</span></a>
+    <a href="cart.html" class="flex flex-col items-center gap-0.5 text-[10px] font-bold hover:text-[#00D2FF] relative"><i data-lucide="shopping-cart" class="w-5 h-5"></i><span>Cart</span><span class="cart-count-badge hidden absolute -top-1 right-1 w-4 h-4 rounded-full bg-amber-400 text-slate-900 text-[9px] font-black flex items-center justify-center">0</span></a>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
